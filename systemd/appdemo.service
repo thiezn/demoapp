@@ -1,0 +1,13 @@
+[Unit]
+Description=AppDemo - A simple python3 aiohttp webserver demo
+Documentation=https://localhost/appdemo
+After=network.target
+
+[Service]
+Type=simple
+User=appdemo
+ExecStart=/usr/local/appdemo/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
