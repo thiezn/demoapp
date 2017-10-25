@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=demoapp
+User=root
 ExecStart=/usr/local/demoapp/start.sh
 Restart=on-failure
 
