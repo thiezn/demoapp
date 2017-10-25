@@ -5,6 +5,20 @@
 
 {% block content %}
 <h1>Retrieved the following data from mongodb backend server</h1>
-<p>the answer is 42</p>
+
+<table border=1>
+<tr>
+  <th>Name</th>
+  <th>Occupation</th>
+  <th>Skillset</th>
+</tr>
+{% for user in users %}
+<tr>
+  <td>{{ user.name }}</td>
+  <td>{{ user.occupation }}</td>
+  <td>{{ user.skillset }}</td>
+</tr>
+{% endfor %}
+</table>
 
 {% endblock content %}

@@ -13,9 +13,10 @@ async def home_page(request):
     """Serving the main webpage showing backend data"""
     db = request.app['db']
     users = await list_users(db)
-    return users
+    print(users)
+    return {'users': users}
 
 
 @aiohttp_jinja2.template('about.html')
 async def about_page(request):
-    return {'whoarewe_page_active': True}
+    return {'about_page_active': True}

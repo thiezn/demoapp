@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from demoapp import Daemon
 import os
 import logging
