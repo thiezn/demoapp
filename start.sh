@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /usr/local/worldpilot/api
+cd /usr/local/demoapp
 pipenv run python3 ./run.py
