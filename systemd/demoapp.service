@@ -1,0 +1,13 @@
+[Unit]
+Description=DemoApp - A simple python3 aiohttp webserver demo
+Documentation=https://localhost/demoapp
+After=network.target
+
+[Service]
+Type=simple
+User=demoapp
+ExecStart=/usr/local/demoapp/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
