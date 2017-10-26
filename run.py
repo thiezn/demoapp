@@ -14,6 +14,7 @@ def main():
     logging.info('Loading Daemon from config file {}'.format(config_file))
     web_daemon = Daemon.load_from_config(config_file)
 
+    logging.info('Hi sergiy')
     logging.info('Starting Web Daemon')
     web_daemon.start()
 
